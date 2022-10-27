@@ -7,400 +7,400 @@ USE EQUIPOS;
 CREATE TABLE RESULTADOS
 (
     partido_id            INTEGER     NOT NULL PRIMARY KEY,
-    partido_eq1           VARCHAR(15) NOT NULL,
+    partido_eq1           INTEGER NOT NULL,
     partido_resultado_eq1 INTEGER     NOT NULL,
-    partido_eq2           VARCHAR(15) NOT NULL,
+    partido_eq2           INTEGER NOT NULL,
     partido_resultado_eq2 INTEGER     NOT NULL,
     goles_favor           INTEGER,
     goles_contra          INTEGER,
     diferencia_goles      INTEGER,
     puntos                INTEGER
+    /*FALTAN CONSTRAINTS*/
 );
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (1, 'Qatar', 5, 'Ecuador', 5);
+VALUES (1, '1', 5, '4', 5);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (2, 'Senegal', 4, 'Países Bajos', 0);
+VALUES (2, '2', 4, '3', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (3, 'Qatar', 5, 'Senegal', 2);
+VALUES (3, '1', 5, '2', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (4, 'Países Bajos', 5, 'Ecuador', 0);
+VALUES (4, '3', 5, '4', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (5, 'Países Bajos', 0, 'Qatar', 0);
+VALUES (5, '3', 0, '1', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (6, 'Ecuador', 1, 'Senegal', 4);
+VALUES (6, '4', 1, '2', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (7, 'Inglaterra', 0, 'Irán', 5);
+VALUES (7, '5', 0, '7', 5);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (8, 'EE.UU', 1, 'Wales', 2);
+VALUES (8, '6', 1, '8', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (9, 'Wales', 1, 'Irán', 5);
+VALUES (9, '8', 1, '7', 5);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (10, 'EE.UU.', 3, 'Inglaterra', 3);
+VALUES (10, '6.', 3, '5', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (11, 'Irán', 5, 'EE.UU.', 2);
+VALUES (11, '7', 5, '6.', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (12, 'Wales', 3, 'Inglaterra', 3);
+VALUES (12, '8', 3, '5', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (13, 'Argentina', 0, 'Arabia Saudí', 5);
+VALUES (13, '9', 0, '12', 5);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (14, 'México', 4, 'Polonia', 3);
+VALUES (14, '10', 4, '11', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (15, 'Polonia', 2, 'Arabia Saudita', 3);
+VALUES (15, '11', 2, '12', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (16, 'Argentina', 4, 'México', 1);
+VALUES (16, '9', 4, '10', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (17, 'Polonia', 1, 'Argentina', 3);
+VALUES (17, '11', 1, '9', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (18, 'Arabia Saudita', 1, 'México', 4);
+VALUES (18, '12', 1, '10', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (19, 'Dinamarca', 5, 'Túnez', 5);
+VALUES (19, '13', 5, '15', 5);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (20, 'Francia', 1, 'Australia', 0);
+VALUES (20, '14', 1, '16', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (21, 'Túnez', 2, 'Australia', 5);
+VALUES (21, '15', 2, '16', 5);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (22, 'Francia', 2, 'Dinamarca', 0);
+VALUES (22, '14', 2, '13', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (23, 'Túnez', 5, 'Francia', 3);
+VALUES (23, '15', 5, '14', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (24, 'Australia', 3, 'Dinamarca', 2);
+VALUES (24, '16', 3, '13', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (25, 'Alemania', 2, 'Japón', 3);
+VALUES (25, '17', 2, '19', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (26, 'España', 2, 'Costa Rica', 5);
+VALUES (26, '18', 2, '20', 5);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (27, 'Japón', 3, 'Costa Rica', 2);
+VALUES (27, '19', 3, '20', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (28, 'España', 4, 'Alemania', 2);
+VALUES (28, '18', 4, '17', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (29, 'Japón', 3, 'España', 3);
+VALUES (29, '19', 3, '18', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (30, 'Costa Rica', 0, 'Alemania', 1);
+VALUES (30, '20', 0, '17', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (31, 'Marruecos', 1, 'Croacia', 0);
+VALUES (31, '21', 1, '23', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (32, 'Bélgica', 5, 'Canadá', 5);
+VALUES (32, '22', 5, '24', 5);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (33, 'Bélgica', 4, 'Marruecos', 3);
+VALUES (33, '22', 4, '21', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (34, 'Croacia', 5, 'Canadá', 5);
+VALUES (34, '23', 5, '24', 5);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (35, 'Canadá', 0, 'Marruecos', 3);
+VALUES (35, '24', 0, '21', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (36, 'Croacia', 2, 'Bélgica', 0);
+VALUES (36, '23', 2, '22', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (37, 'Suiza', 0, 'Camerún', 0);
+VALUES (37, '25', 0, '27', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (38, 'Brasil', 3, 'Serbia', 0);
+VALUES (38, '26', 3, '28', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (39, 'Camerún', 0, 'Serbia', 2);
+VALUES (39, '27', 0, '28', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (40, 'Brasil', 4, 'Suiza', 5);
+VALUES (40, '26', 4, '25', 5);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (41, 'Camerún', 1, 'Brasil', 0);
+VALUES (41, '27', 1, '26', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (42, 'Serbia', 4, 'Suiza', 5);
+VALUES (42, '28', 4, '25', 5);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (43, 'Uruguay', 5, 'Corea', 2);
+VALUES (43, '29', 5, '31', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (44, 'Portugal', 3, 'Ghana', 4);
+VALUES (44, '30', 3, '32', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (45, 'Corea', 0, 'Ghana', 1);
+VALUES (45, '31', 0, '32', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (46, 'Portugal', 0, 'Uruguay', 3);
+VALUES (46, '30', 0, '29', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (47, 'Corea', 0, 'Portugal', 5);
+VALUES (47, '31', 0, '30', 5);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (48, 'Uruguay', 5, 'Ghana', 1);
+VALUES (48, '29', 5, '32', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (49, 'Qatar', 1, 'Inglaterra', 0);
+VALUES (49, '1', 1, '5', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (50, 'Senegal', 4, 'EE.UU', 4);
+VALUES (50, '2', 4, '6', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (51, 'Qatar', 2, 'Wales', 0);
+VALUES (51, '1', 2, '8', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (52, 'Países Bajos', 0, 'EE.UU.', 1);
+VALUES (52, '3', 0, '6.', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (53, 'Países Bajos', 3, 'Irán', 2);
+VALUES (53, '3', 3, '7', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (54, 'Ecuador', 0, 'Wales', 0);
+VALUES (54, '4', 0, '8', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (55, 'Ecuador', 3, 'Irán', 2);
+VALUES (55, '4', 3, '7', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (56, 'Países Bajos', 0, 'Wales', 4);
+VALUES (56, '3', 0, '8', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (57, 'Senegal', 2, 'Irán', 4);
+VALUES (57, '2', 2, '7', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (58, 'Ecuador', 4, 'Inglaterra', 4);
+VALUES (58, '4', 4, '5', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (59, 'Qatar', 3, 'EE.UU.', 3);
+VALUES (59, '1', 3, '6.', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (60, 'Senegal', 0, 'Inglaterra', 3);
+VALUES (60, '2', 0, '5', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (61, 'Argentina', 2, 'Dinamarca', 4);
+VALUES (61, '9', 2, '13', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (62, 'México', 1, 'Francia', 1);
+VALUES (62, '10', 1, '14', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (63, 'Polonia', 4, 'Túnez', 4);
+VALUES (63, '11', 4, '15', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (64, 'Argentina', 2, 'Francia', 3);
+VALUES (64, '9', 2, '14', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (65, 'Polonia', 1, 'Túnez', 3);
+VALUES (65, '11', 1, '15', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (66, 'Arabia Saudita', 2, 'Australia', 3);
+VALUES (66, '12', 2, '16', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (67, 'Arabia Saudí', 4, 'Túnez', 3);
+VALUES (67, '12', 4, '15', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (68, 'Polonia', 3, 'Australia', 3);
+VALUES (68, '11', 3, '16', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (69, 'Arabia Saudita', 4, 'Australia', 4);
+VALUES (69, '12', 4, '16', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (70, 'México', 4, 'Dinamarca', 2);
+VALUES (70, '10', 4, '13', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (71, 'Argentina', 0, 'Francia', 3);
+VALUES (71, '9', 0, '14', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (72, 'México', 1, 'Dinamarca', 1);
+VALUES (72, '10', 1, '13', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (73, 'Alemania', 2, 'Marruecos', 0);
+VALUES (73, '17', 2, '21', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (74, 'España', 0, 'Bélgica', 0);
+VALUES (74, '18', 0, '22', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (75, 'Japón', 1, 'Bélgica', 1);
+VALUES (75, '19', 1, '22', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (76, 'España', 1, 'Croacia', 2);
+VALUES (76, '18', 1, '23', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (77, 'Japón', 2, 'Canadá', 0);
+VALUES (77, '19', 2, '24', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (78, 'Costa Rica', 4, 'Croacia', 1);
+VALUES (78, '20', 4, '23', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (79, 'Japón', 3, 'Croacia', 0);
+VALUES (79, '19', 3, '23', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (80, 'Costa Rica', 1, 'Canadá', 4);
+VALUES (80, '20', 1, '24', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (81, 'Costa Rica', 3, 'Marruecos', 2);
+VALUES (81, '20', 3, '21', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (82, 'Alemania', 3, 'Canadá', 0);
+VALUES (82, '17', 3, '24', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (83, 'España', 0, 'Marruecos', 0);
+VALUES (83, '18', 0, '21', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (84, 'Alemania', 1, 'Bélgica', 3);
+VALUES (84, '17', 1, '22', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (85, 'Suiza', 3, 'Uruguay', 1);
+VALUES (85, '25', 3, '29', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (86, 'Brasil', 0, 'Portugal', 3);
+VALUES (86, '26', 0, '30', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (87, 'Camerún', 2, 'Corea', 3);
+VALUES (87, '27', 2, '31', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (88, 'Brasil', 0, 'Portugal', 1);
+VALUES (88, '26', 0, '30', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (89, 'Camerún', 0, 'Corea', 0);
+VALUES (89, '27', 0, '31', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (90, 'Serbia', 2, 'Uruguay', 1);
+VALUES (90, '28', 2, '29', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (91, 'Camerún', 4, 'Corea', 2);
+VALUES (91, '27', 4, '31', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (92, 'Serbia', 1, 'Ghana', 1);
+VALUES (92, '28', 1, '32', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (93, 'Serbia', 0, 'Ghana', 1);
+VALUES (93, '28', 0, '32', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (94, 'Suiza', 1, 'Uruguay', 1);
+VALUES (94, '25', 1, '29', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (95, 'Brasil', 4, 'Portugal', 1);
+VALUES (95, '26', 4, '30', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (96, 'Suiza', 2, 'Ghana', 0);
+VALUES (96, '25', 2, '32', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (97, 'Qatar', 0, 'Argentina', 2);
+VALUES (97, '1', 0, '9', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (98, 'Senegal', 0, 'México', 0);
+VALUES (98, '2', 0, '10', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (99, 'Qatar', 1, 'Polonia', 1);
+VALUES (99, '1', 1, '11', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (100, 'Países Bajos', 1, 'Argentina', 0);
+VALUES (100, '3', 1, '9', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (101, 'Países Bajos', 2, 'Polonia', 1);
+VALUES (101, '3', 2, '11', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (102, 'Ecuador', 4, 'Arabia Saudita', 3);
+VALUES (102, '4', 4, '12', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (103, 'Ecuador', 0, 'Arabia Saudí', 2);
+VALUES (103, '4', 0, '12', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (104, 'Países Bajos', 4, 'Polonia', 0);
+VALUES (104, '3', 4, '11', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (105, 'Senegal', 0, 'Arabia Saudita', 1);
+VALUES (105, '2', 0, '12', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (106, 'Ecuador', 1, 'México', 0);
+VALUES (106, '4', 1, '10', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (107, 'Qatar', 1, 'Argentina', 0);
+VALUES (107, '1', 1, '9', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (108, 'Senegal', 3, 'México', 4);
+VALUES (108, '2', 3, '10', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (109, 'Inglaterra', 1, 'Dinamarca', 4);
+VALUES (109, '5', 1, '13', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (110, 'EE.UU', 0, 'Francia', 3);
+VALUES (110, '6', 0, '14', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (111, 'Wales', 0, 'Túnez', 1);
+VALUES (111, '8', 0, '15', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (112, 'EE.UU.', 4, 'Francia', 0);
+VALUES (112, '6.', 4, '14', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (113, 'Irán', 4, 'Túnez', 1);
+VALUES (113, '7', 4, '15', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (114, 'Wales', 0, 'Australia', 3);
+VALUES (114, '8', 0, '16', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (115, 'Irán', 2, 'Túnez', 3);
+VALUES (115, '7', 2, '15', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (116, 'Wales', 0, 'Australia', 2);
+VALUES (116, '8', 0, '16', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (117, 'Irán', 3, 'Australia', 3);
+VALUES (117, '7', 3, '16', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (118, 'Inglaterra', 3, 'Dinamarca', 0);
+VALUES (118, '5', 3, '13', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (119, 'EE.UU.', 4, 'Francia', 1);
+VALUES (119, '6.', 4, '14', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (120, 'Inglaterra', 1, 'Dinamarca', 4);
+VALUES (120, '5', 1, '13', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (121, 'Alemania', 4, 'Suiza', 1);
+VALUES (121, '17', 4, '25', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (122, 'España', 1, 'Brasil', 0);
+VALUES (122, '18', 1, '26', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (123, 'Japón', 1, 'Camerún', 1);
+VALUES (123, '19', 1, '27', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (124, 'España', 4, 'Brasil', 2);
+VALUES (124, '18', 4, '26', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (125, 'Japón', 3, 'Camerún', 1);
+VALUES (125, '19', 3, '27', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (126, 'Costa Rica', 0, 'Serbia', 3);
+VALUES (126, '20', 0, '28', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (127, 'Japón', 4, 'Camerún', 1);
+VALUES (127, '19', 4, '27', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (128, 'Costa Rica', 0, 'Serbia', 1);
+VALUES (128, '20', 0, '28', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (129, 'Costa Rica', 2, 'Serbia', 2);
+VALUES (129, '20', 2, '28', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (130, 'Alemania', 2, 'Suiza', 3);
+VALUES (130, '17', 2, '25', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (131, 'España', 2, 'Brasil', 4);
+VALUES (131, '18', 2, '26', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (132, 'Alemania', 2, 'Suiza', 1);
+VALUES (132, '17', 2, '25', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (133, 'Marruecos', 0, 'Uruguay', 1);
+VALUES (133, '21', 0, '29', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (134, 'Bélgica', 2, 'Portugal', 3);
+VALUES (134, '22', 2, '30', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (135, 'Bélgica', 1, 'Corea', 3);
+VALUES (135, '22', 1, '31', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (136, 'Croacia', 3, 'Portugal', 4);
+VALUES (136, '23', 3, '30', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (137, 'Canadá', 3, 'Corea', 3);
+VALUES (137, '24', 3, '31', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (138, 'Croacia', 4, 'Uruguay', 1);
+VALUES (138, '23', 4, '29', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (139, 'Croacia', 3, 'Corea', 3);
+VALUES (139, '23', 3, '31', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (140, 'Canadá', 2, 'Ghana', 4);
+VALUES (140, '24', 2, '32', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (141, 'Marruecos', 1, 'Ghana', 1);
+VALUES (141, '21', 1, '32', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (142, 'Canadá', 2, 'Uruguay', 1);
+VALUES (142, '24', 2, '29', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (143, 'Marruecos', 2, 'Portugal', 2);
+VALUES (143, '21', 2, '30', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (144, 'Bélgica', 1, 'Ghana', 2);
+VALUES (144, '22', 1, '32', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (145, 'Qatar', 3, 'Alemania', 1);
+VALUES (145, '1', 3, '17', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (146, 'Senegal', 2, 'España', 1);
+VALUES (146, '2', 2, '18', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (147, 'Qatar', 4, 'Japón', 0);
+VALUES (147, '1', 4, '19', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (148, 'Países Bajos', 2, 'España', 1);
+VALUES (148, '3', 2, '18', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (149, 'Países Bajos', 2, 'Japón', 4);
+VALUES (149, '3', 2, '19', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (150, 'Ecuador', 4, 'Costa Rica', 1);
+VALUES (150, '4', 4, '20', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (151, 'Ecuador', 2, 'Japón', 2);
+VALUES (151, '4', 2, '19', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (152, 'Países Bajos', 1, 'Costa Rica', 0);
+VALUES (152, '3', 1, '20', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (153, 'Senegal', 4, 'Costa Rica', 3);
+VALUES (153, '2', 4, '20', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (154, 'Ecuador', 4, 'Alemania', 0);
+VALUES (154, '4', 4, '17', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (155, 'Qatar', 0, 'España', 0);
+VALUES (155, '1', 0, '18', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (156, 'Senegal', 3, 'Alemania', 3);
+VALUES (156, '2', 3, '17', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (157, 'Inglaterra', 2, 'Marruecos', 0);
+VALUES (157, '5', 2, '21', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (158, 'EE.UU', 1, 'Bélgica', 0);
+VALUES (158, '6', 1, '22', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (159, 'Wales', 1, 'Bélgica', 3);
+VALUES (159, '8', 1, '22', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (160, 'EE.UU.', 0, 'Croacia', 0);
+VALUES (160, '6.', 0, '23', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (161, 'Irán', 1, 'Canadá', 3);
+VALUES (161, '7', 1, '24', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (162, 'Wales', 4, 'Croacia', 1);
+VALUES (162, '8', 4, '23', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (163, 'Irán', 4, 'Croacia', 2);
+VALUES (163, '7', 4, '23', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (164, 'Wales', 3, 'Canadá', 0);
+VALUES (164, '8', 3, '24', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (165, 'Irán', 2, 'Marruecos', 2);
+VALUES (165, '7', 2, '21', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (166, 'Inglaterra', 3, 'Canadá', 1);
+VALUES (166, '5', 3, '24', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (167, 'EE.UU.', 1, 'Marruecos', 3);
+VALUES (167, '6.', 1, '21', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (168, 'Inglaterra', 4, 'Bélgica', 1);
+VALUES (168, '5', 4, '22', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (169, 'Argentina', 1, 'Suiza', 3);
+VALUES (169, '9', 1, '25', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (170, 'México', 1, 'Brasil', 1);
+VALUES (170, '10', 1, '26', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (171, 'Polonia', 2, 'Camerún', 4);
+VALUES (171, '11', 2, '27', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (172, 'Argentina', 1, 'Brasil', 1);
+VALUES (172, '9', 1, '26', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (173, 'Polonia', 0, 'Camerún', 1);
+VALUES (173, '11', 0, '27', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (174, 'Arabia Saudita', 0, 'Serbia', 1);
+VALUES (174, '12', 0, '28', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (175, 'Arabia Saudí', 2, 'Camerún', 0);
+VALUES (175, '12', 2, '27', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (176, 'Polonia', 1, 'Serbia', 4);
+VALUES (176, '11', 1, '28', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (177, 'Arabia Saudita', 3, 'Serbia', 4);
+VALUES (177, '12', 3, '28', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (178, 'México', 4, 'Suiza', 3);
+VALUES (178, '10', 4, '25', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (179, 'Argentina', 1, 'Brasil', 0);
+VALUES (179, '9', 1, '26', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (180, 'México', 2, 'Suiza', 0);
+VALUES (180, '10', 2, '25', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (181, 'Dinamarca', 3, 'Uruguay', 0);
+VALUES (181, '13', 3, '29', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (182, 'Francia', 2, 'Portugal', 1);
+VALUES (182, '14', 2, '30', 1);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (183, 'Túnez', 0, 'Corea', 3);
+VALUES (183, '15', 0, '31', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (184, 'Francia', 4, 'Portugal', 2);
+VALUES (184, '14', 4, '30', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (185, 'Túnez', 2, 'Corea', 2);
+VALUES (185, '15', 2, '31', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (186, 'Australia', 3, 'Uruguay', 4);
+VALUES (186, '16', 3, '29', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (187, 'Túnez', 1, 'Corea', 4);
+VALUES (187, '15', 1, '31', 4);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (188, 'Australia', 2, 'Ghana', 3);
+VALUES (188, '16', 2, '32', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (189, 'Australia', 0, 'Ghana', 2);
+VALUES (189, '16', 0, '32', 2);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (190, 'Dinamarca', 1, 'Uruguay', 0);
+VALUES (190, '13', 1, '29', 0);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (191, 'Francia', 4, 'Portugal', 3);
+VALUES (191, '14', 4, '30', 3);
 INSERT INTO RESULTADOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
-VALUES (192, 'Dinamarca', 2, 'Ghana', 3);
-
+VALUES (192, '13', 2, '32', 3);
 
 CREATE TABLE TEAMS
 (
