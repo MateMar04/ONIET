@@ -8,17 +8,22 @@
 from django.db import models
 
 
-class Equipos(models.Model):
+class Resultados(models.Model):
     partido_id = models.IntegerField(primary_key=True)
     partido_eq1 = models.CharField(max_length=30, blank=True, null=True)
     partido_resultado_eq1 = models.IntegerField(blank=True, null=True)
     partido_eq2 = models.CharField(max_length=30, blank=True, null=True)
     partido_resultado_eq2 = models.IntegerField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'RESULTADOS'
+
+
+class Equipos(models.Model):
+    id = models.IntegerField(primary_key=True)
+    nombre = models.CharField(max_length=30, blank=True, null=True)
     goles_favor = models.IntegerField(blank=True, null=True)
     goles_contra = models.IntegerField(blank=True, null=True)
     diferencia_goles = models.IntegerField(blank=True, null=True)
     puntos = models.IntegerField(blank=True, null=True)
-
-    class Meta:
-        managed = False
-        db_table = 'EQUIPOS'
