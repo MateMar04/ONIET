@@ -14,6 +14,10 @@ class Equipos(models.Model):
     partido_resultado_eq1 = models.IntegerField(blank=True, null=True)
     partido_eq2 = models.CharField(max_length=30, blank=True, null=True)
     partido_resultado_eq2 = models.IntegerField(blank=True, null=True)
+    goles_favor = models.IntegerField(blank=True, null=True)
+    goles_contra = models.IntegerField(blank=True, null=True)
+    diferencia_goles = models.IntegerField(blank=True, null=True)
+    puntos = models.IntegerField(blank=True, null=True)
 
     class Meta:
         managed = False
