@@ -10,7 +10,11 @@ CREATE TABLE EQUIPOS
     partido_eq1           VARCHAR(15) NOT NULL,
     partido_resultado_eq1 INTEGER     NOT NULL,
     partido_eq2           VARCHAR(15) NOT NULL,
-    partido_resultado_eq2 INTEGER     NOT NULL
+    partido_resultado_eq2 INTEGER     NOT NULL,
+    goles_favor           INTEGER,
+    goles_contra          INTEGER,
+    diferencia_goles      INTEGER,
+    puntos                INTEGER
 );
 INSERT INTO EQUIPOS(partido_id, partido_eq1, partido_resultado_eq1, partido_eq2, partido_resultado_eq2)
 VALUES (1, 'Qatar', 5, 'Ecuador', 5);
